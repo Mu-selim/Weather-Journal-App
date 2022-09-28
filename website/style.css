@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#b7d6e8, #3f98d2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 90%;
+    min-height: 80vh;
+    background: linear-gradient(#40a8ec, #3f98d2, #c7e6f8);
+    display: flex;
+    overflow: hidden;
+}
+
+#entryHolder {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    gap: 12px;
+} 
+
+#entryHolder * {
+    text-align: center;
+}
+
+#cityName {
+    font-size: 2em;
+}
+
+#temp {
+    height: fit-content;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#temp span {
+    margin-left: 8px;
+}
+
+#inputBox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 40px 24px 0 24px;
+    background-color: #80808091;
+}
+
+::placeholder {
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#zip, #feelings {
+    border: none;
+    padding: 12px;
+    color: #ffffff;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s all linear;
+}
+
+#zip {
+    border-bottom: 1px solid #ffffff;
+}
+
+#zip:focus {
+    border-bottom: 1px solid #000000;
+}
+
+#feelings {
+    height: 20vh;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+#feelings:focus {
+    border-color: #000000;
+}
+
+#error {
+    color: #ff0000;
+    margin: -10px 0 0 12px;
+}
+
+#generate {
+    padding: 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: 0.3s all linear;
+}
+
+#generate:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        height: 90vh;
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+
+    #inputBox {
+        width: 100%;
+        height: 50%;
+        padding: 12px 32px;
+    }
+
+    #entryHolder {
+        width: 100%;
+        height: 50%;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Weather Journal App</title>
+</head>
+<body>
+    <!-- Container of Application componemts -->
+    <div class="container">
+        <!-- enrty hloder section begins -->
+        <div id="entryHolder">
+            <div id="date"></div>
+            <div id="cityName"></div>
+            <div id="temp"></div>
+            <div id="description"></div>
+            <div id="content"></div>
+        </div>
+        <!-- enrty hloder section ends -->
+
+        <!-- inputs section begins -->
+        <div id="inputBox">
+            <input id="zip" type="text" placeholder="enter zip code here">
+            <span id="error"></span>
+            <textarea id="feelings" placeholder="your feeling!"></textarea>
+            <input id="generate" type="button" value="Generate">
+        </div>
+        <!-- inputs section begins -->
+    </div>
+</body>
+</html>
